@@ -1,0 +1,102 @@
+@import 'reset';
+
+$green: #1b6233;
+$grey: #ccc;
+$white: #fff;
+$black: #000;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $green;
+	font-size: 14px;
+}
+
+h1 {
+	height: 50px;
+	font-size: 30px;
+	background-color: $grey;
+	color: $white;
+	line-height: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+#board {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+li {
+	list-style: none;
+	.btn-delete {
+		background: $white;
+	}
+}
+
+.column,
+.create-column {
+	width: 200px;
+	margin: 10px;
+	float: left;
+	background: $grey;
+}
+
+.create-column {	
+	padding: 15px;
+	display: flex;
+	justify-content: flex-start;
+	font-weight: bold;
+}
+.create-column:hover,
+.add-card:hover {
+	background: $grey;
+	color: $white;
+}
+
+ h2 {
+	display: inline-flex;
+	justify-content: flex-start;	
+	color: $black;
+	padding: 15px;	
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 90%;
+}
+
+.btn-delete {
+	width: 10%;
+	border: none;
+	background: $grey;
+	color: $black;
+	font-weight: bold;
+	cursor: pointer;
+	&:hover {
+		color: $green;
+	}
+} 
+
+.add-card {
+	height: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	padding: 0 10px;
+	background: #e2e4e6;		
+}
+
+.card {
+	background: $white;
+	margin: 10px;
+	padding: 5px;
+	p {
+		display: inline-flex;
+		justify-content: flex-start;	
+		width: 90%;
+	}
+}
